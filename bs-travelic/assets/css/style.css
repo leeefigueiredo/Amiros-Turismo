@@ -58,8 +58,8 @@ p {
 }
 
 section {
-    padding-top:50px;
-    margin-top:50px;
+    padding-top:10px;
+    margin-top:10px;
 }
 .g-pad-bottom {
     padding-bottom:30px;
@@ -80,21 +80,32 @@ font-size: 18px;
     margin-top:40px;
 }
 
-#home-sec { 
-  
-    
-background: url(../img/paraty.jpg) no-repeat 50% 50%;
-background-attachment: fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+#home-sec{ 
+
+background: url(../img/FUNDO1.jpg) no-repeat 50% 50%;
+
+background-size:contain;
+-webkit-background-size: contain;
 width: 100%;
 display: block;
-height: auto;
- padding-top:190px;
-   min-height:650px;
-    color:#fff;
+padding-top: 900px;
+height: 100%;
+
+
+color:#ffffff;
+}
+
+@media only screen and (max-width: 500px) {
+    #home-sec{ 
+        background: url(../img/FUNDO1.jpg) no-repeat;
+        -webkit-background-size: contain;
+        background-size:contain;
+        min-height: 431px;
+        padding-top: 5px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+
 }
 
 .head-main {
