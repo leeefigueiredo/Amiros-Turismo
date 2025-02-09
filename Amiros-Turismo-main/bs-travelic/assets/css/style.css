@@ -1,4 +1,77 @@
 ﻿
+.iconesTop{
+   
+    margin-top: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 60px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.iconeclick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.destino{
+    background:  #ddd;
+    width: auto;
+    height: 150px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.destino h1{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+.destino2{
+   padding: 10px;
+}
+
+select{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: #ffcf23;
+    border-radius: 5px;
+    width: 18%;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=============================================================
     Authour URI: www.binarytheme.com
     License: Commons Attribution 3.0
@@ -14,6 +87,12 @@
 /*=======================================
     GENERAL STYLES
 ==================================================*/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/Luxerie Dislay\ Display.otf');
+  }
+
 
 body {
           font-family:'Open Sans', sans-serif;
@@ -131,13 +210,21 @@ color:#ffffff;
     border-radius: 5px;
     padding:5px;
 }
-
+.logoetexto{
+    display: flex;
+}
 
 /* ===========================================================
    NAVBAR CHANGES   
    ============================================================*/
 .navbar {
 	font-size: 18px;
+    font-family: 'luxerie'sans-serif;
+    letter-spacing: 2PX;
+    font-style:unset;   
+    border-radius: 5px;
+    margin: 10px;
+    font-weight:bold;
 }
 
 .navbar-inverse {
@@ -168,7 +255,7 @@ color: #000;
 border-color: #D6D6D6;
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-border-color: #000;
+border-color: #ffcf23;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {

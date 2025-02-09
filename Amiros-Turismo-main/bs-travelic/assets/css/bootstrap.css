@@ -745,6 +745,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  display: block;
 }
 @media (min-width: 768px) {
   .container {
@@ -3677,7 +3678,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 15px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
+ 
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 }
 .navbar-collapse.in {
@@ -4085,7 +4086,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #ffcf23;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {

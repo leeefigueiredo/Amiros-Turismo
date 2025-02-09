@@ -5,6 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,9 +22,9 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--ANIMATED FONTAWESOME STYLE CSS -->
     <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
-     <!--PRETTYPHOTO MAIN STYLE -->
+    <!--PRETTYPHOTO MAIN STYLE -->
     <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-       <!-- CUSTOM STYLE CSS -->
+    <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -31,46 +32,92 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]--></head>
+    <![endif]-->
+</head>
+
 <body>
-     <!-- NAV SECTION -->
-         <div class="navbar navbar-inverse navbar-fixed-top">
-       
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Amiros Turismo</a>
+    <Header>
+        <!-- NAV SECTION -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class=logoetexto>
+                        <img src="../img/image.png" alt="logo" width="80px" height="50px">
+                        <p class="navbar-brand" href="#">Amiros Turismo</p>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">QUEM SOMOS</a></li>
+                        <li><a href="#">PACOTES</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">QUEM SOMOS</a></li>
-                     <li><a href="#">PACOTES</a></li>
-                    <li><a href="#">CONTATO</a></li>
-                </ul>
-            </div>
-           
         </div>
-    </div>
-     <!--END NAV SECTION -->
-    
-    <!-- END FOOTER SECTION -->
+        <!--END NAV SECTION -->
+        <div class="iconesTop">
+            <a href="#" class="iconeclick">
+                <img src="../img/mala-de-viagem.png" alt="pacote" width="30px" height="30px">
+                <p>Pacotes</p>
+            </a>
+            <a href="#" class="iconeclick">
+                <img src="../img/hoteis.png" alt="Hoteis" width="30px" height="30px">
+                <p>Hoteis</p>
+            </a>
+            <a href="#" class="iconeclick">
+                <img src="../img/aviao.png" alt="Viagem" width="30px" height="30px">
+                <p>viagem</p>
+            </a>
+            <a href="#" class="iconeclick">
+                <img src="../img/barco.png" alt="barco" width="30px" height="30px">
+                <p>Pacotes</p>
+            </a>
+        </div>
+    </Header>
+
+    <main>
+        <div class="destino">
+
+            <div class="destino2">
+                <label for="destinations">Escolha um destino:</label><br>
+                <select id="destinations" name="destinations">
+                    <option value="porto_de_galinhas">Porto de Galinhas - PE</option>
+                    <option value="joao_pessoa">João Pessoa - PA</option>
+                    <option value="porto_seguro">Porto Seguro - BA</option>
+                </select>
+                <div class="btn">
+                    <a><img src="../img/lupa.png" alt="buscar" width="30px" height="30px"></a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
 
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY  -->
     <script src="assets/plugins/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="assets/plugins/bootstrap.min.js"></script>  
-     <!-- ISOTOPE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.min.js"></script>
+    <!-- ISOTOPE SCRIPT   -->
     <script src="assets/plugins/jquery.isotope.min.js"></script>
     <!-- PRETTY PHOTO SCRIPT   -->
-    <script src="assets/plugins/jquery.prettyPhoto.js"></script>    
+    <script src="assets/plugins/jquery.prettyPhoto.js"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
 
 </body>
+
 </html>
