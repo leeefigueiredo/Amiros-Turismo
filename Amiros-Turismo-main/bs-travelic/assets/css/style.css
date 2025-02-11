@@ -1,4 +1,9 @@
-﻿.iconesTop {
+﻿html {
+    scroll-behavior: smooth;
+}
+
+
+.iconesTop {
 
     margin-top: 90px;
     margin-left: 10%;
@@ -29,6 +34,33 @@ a {
     border-radius: 5px;
 }
 
+
+#quemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #aaa;
+    text-align: center;
+
+}
+
+.iconsatendimento {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.textQS {
+    padding: 20px;
+}
 
 
 .destino2 {
@@ -65,8 +97,8 @@ select {
     bottom: 10px;
 }
 
-.pacote{
- 
+.pacote {
+
     display: flex;
     flex-direction: row;
     margin-left: 7%;
@@ -80,7 +112,7 @@ select {
     font-size: 20px;
 }
 
-.pacote01{
+.pacote01 {
     box-shadow: 5px 5px 15px #aaa;
     width: auto;
     height: 330px;
@@ -92,31 +124,56 @@ select {
     font-family: sans-serif;
 }
 
-.pacote01 img{
+.pacote02 {
+    background-color: #ffcf23;
+    box-shadow: 5px 5px 15px #aaa;
+    width: auto;
+    height: 100px;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 5px;
+
+    padding-right: 20px;
+
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.pacote02 a {
+    color: red;
+    font-weight: bold;
+
+}
+
+.pacote01 img {
     padding-top: 10px;
     border-radius: 5px;
 }
 
-.pacote01 h4{
+.pacote01 h4 {
     font-weight: bold;
 }
-.pacote01 div{
+
+.pacote01 div {
     display: flex;
     align-items: center;
     justify-content: end;
     margin: 15px;
 }
 
-footer{
-   display: flex;
-   justify-content: center;
+footer {
+    display: flex;
+    justify-content: center;
     background-color: #ffcf23;
     width: auto;
     height: 80px;
 }
 
-footer div{
-   padding: 10px;
+footer div {
+    padding: 10px;
 
 }
 
@@ -277,7 +334,7 @@ h2 {
 .navbar-inverse .navbar-brand {
     color: #000;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 2px;
 }
