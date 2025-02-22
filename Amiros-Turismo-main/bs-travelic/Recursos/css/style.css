@@ -1,495 +1,74 @@
-﻿html {
-    scroll-behavior: smooth;
+﻿body {
+    margin: 2% 10% auto 10%;
+    background-color: #eee;
+    font-family: "Armata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #ffcf23
 }
 
 
-.iconesTop {
+.armata-regular {
+    font-family: "Armata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-    margin-top: 90px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 60px;
+
+.navegador {
     display: flex;
     flex-direction: row;
+    background-color: var(--main-color);
     justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
 }
 
-.iconeclick {
+
+.logo {
+
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.logo p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font: 'luxerie';
+
+}
+
+.menu {
+
+    display: flex;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+
+}
+
+li {
+    padding-left: 15px;
+    list-style-type: none;
 }
 
 a {
-    color: black;
     text-decoration: none;
+    color: black;
 }
 
-.destino {
-    background: #ddd;
-    width: auto;
-    height: 150px;
-    margin-left: 3%;
-    margin-right: 3%;
-    border-radius: 5px;
-}
-
-
-#quemSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 20px;
-    margin-bottom: 1px;
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px #aaa;
-    text-align: center;
-
-}
-
-.iconsatendimento {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.textQS {
-    padding: 20px;
-}
-
-
-.destino2 {
-    padding: 10px;
-}
-
-select {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-}
-
-.btnDestino {
-    background-color: #ffcf23;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 85%;
-    border-bottom: 3px solid #aaa;
-    align-items: center;
-    display: flex;
-    align-items: center;
-}
-
-.btnDestino img {
-    margin-left: 10px;
-
-}
-
-.wpp {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-}
-
-.pacote {
-
-    display: flex;
-    flex-direction: row;
-    margin-left: 7%;
-    margin-right: 3%;
-    margin-top: 20px;
-    margin-bottom: 1px;
-}
-
-.pacote p {
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-.pacote01 {
-    box-shadow: 5px 5px 15px #aaa;
-    width: auto;
-    height: 330px;
-    margin-left: 7%;
-    margin-right: 7%;
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-left: 20px;
-    font-family: sans-serif;
-}
-
-.pacote02 {
-    background-color: #ffcf23;
-    box-shadow: 5px 5px 15px #aaa;
-    width: auto;
-    height: 100px;
-    margin-left: 7%;
-    margin-right: 7%;
-    border-radius: 5px;
-
-    padding-right: 20px;
-
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-}
-
-.pacote02 a {
-    color: red;
-    font-weight: bold;
-
-}
-
-.pacote01 img {
-    padding-top: 10px;
-    border-radius: 5px;
-}
-
-.pacote01 h4 {
-    font-weight: bold;
-}
-
-.pacote01 div {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin: 15px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #ffcf23;
-    width: auto;
-    height: 80px;
-}
-
-footer div {
-    padding: 10px;
-
-}
-
-footer p {
-    margin: 0;
-}
-
-
-
-/* carrousel */
-
-.crr{
-    background-size: 100% 100%;
-    /* box-shadow: 20px 20px px gray; */
-    animation: slider 20s linear infinite;
-   
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 50px;
-
-}
-
-@keyframes slider {
-    0%{background-image: url(/Amiros-Turismo-main/img/azul.jpg);}
-    30%{background-image: url(/Amiros-Turismo-main/img/cvc.png);}
-    60%{background-image: url(/Amiros-Turismo-main/img/diversa.png);}
-    100%{background-image: url(/Amiros-Turismo-main/img/azul.jpg);}
-    
-}
-
-
-/* carrousel */
-
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-
-/*=======================================
-    GENERAL STYLES
-==================================================*/
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/Luxerie Dislay\ Display.otf');
-}
-
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-.text-center {
-    text-align: center;
-}
-
-h2 {
-    line-height: 50px;
-    color: #E91C1C;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*=======================================
-    HOME SECTION STYLES
-==================================================*/
-
-.go-marg {
-    margin-top: 40px;
-}
-
-#home-sec {
-
-    background: url(../img/FUNDO1.jpg) no-repeat 50% 50%;
-
-    background-size: contain;
-    -webkit-background-size: contain;
-    width: 100%;
-    display: block;
-    padding-top: 900px;
-    height: 100%;
-
-
-    color: #ffffff;
-}
-
-@media only screen and (max-width: 500px) {
-    #home-sec {
-        background: url(../img/FUNDO1.jpg) no-repeat;
-        -webkit-background-size: contain;
-        background-size: contain;
-        min-height: 431px;
-        padding-top: 5px;
-        margin-top: 50px;
-        margin-bottom: 5px;
-    }
-
-}
-
-.head-main {
-    font-size: 50px;
-    font-weight: 900;
-    border-radius: 5px;
-    padding: 15px;
-    text-transform: uppercase;
-
-}
-
-.head-main img {
-    border-radius: 50px;
-}
-
-.head-last {
-    margin-top: 70px;
-    color: #000;
-    font-size: 18px;
-    font-weight: 900;
-    padding: 5px 20px 20px 20px;
-    background-color: #ffcf23;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.logoetexto {
-    display: flex;
-}
-
-/* ===========================================================
-   NAVBAR CHANGES   
-   ============================================================*/
-.navbar {
-    font-size: 18px;
-    font-family: 'luxerie' sans-serif;
-    letter-spacing: 2PX;
-    font-style: unset;
-    border-radius: 5px;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.navbar-inverse {
-    background: #ffcf23;
-    min-height: 60px;
-    padding-top: 5px;
-
-}
-
-.navbar-inverse .navbar-nav>.active>a {
-    background: #ffcf23;
-}
-
-.navbar-inverse .navbar-brand {
-    color: #000;
-    font-weight: bolder;
-    font-size: 20px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.navbar-inverse :hover .navbar-brand:hover {
-    color: #000;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #000;
-}
-
-.navbar-inverse {
-    border-color: #D6D6D6;
-}
-
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-    border-color: #ffcf23;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-    color: #000;
-}
-
-.navbar-toggle {
-    background-color: black;
-}
-
-/*==========================================
-    PORTFOLIO STYLES
-    =====================================================*/
-
-
-.portfolio-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.portfolio-items {
-    margin-right: -20px;
-}
-
-.portfolio-items>li {
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.portfolio-items.col-3>li {
-    width: 33%;
-}
-
-.portfolio-item .item-main {
-    margin: 0 10px 10px 0;
-    text-align: center;
-    background: #fff;
-    padding: 10px;
-    border: 1px solid #E8EAEE;
-
-}
-
-.portfolio-item img {
-    width: 100%;
-}
-
-.portfolio-item .portfolio-image {
-    position: relative;
-}
-
-.portfolio-item h5 {
-    margin: 0;
-    padding: 10px 0 10px 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    background-color: #E91C1C;
-    color: #fff;
-}
-
-.portfolio-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    vertical-align: middle;
-    -webkit-transition: opacity 300ms;
-    -moz-transition: opacity 300ms;
-    -o-transition: opacity 300ms;
-    transition: opacity 300ms;
-}
-
-.portfolio-item .overlay .preview {
-    position: relative;
-    top: 50%;
-    display: inline-block;
-    margin-top: -20px;
-}
-
-.portfolio-item:hover .overlay {
-    opacity: 1;
-}
-
-/*=======================================
-    Contact STYLES
-==================================================*/
-
-.cnt {
-    width: 100%;
-    min-height: 350px;
-    border: 1px solid #e1e1e1;
-}
-
-
-/*=======================================
-    MEDIA QUERIES
-    
-    ==================================================*/
-
-@media all and (max-width:640px) and (min-width:381px) {
-    .head-main {
-        font-size: 28px;
-    }
-}
-
-@media all and (max-width:381px) and (min-width:200px) {
-    .head-main {
-        font-size: 24px;
-    }
-}
+@media (max-width: 600px) {}
