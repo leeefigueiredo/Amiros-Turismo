@@ -124,6 +124,29 @@ a {
 }
 
 
+
+.ofertascard{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid green;
+
+}
+
+
+.card{
+    
+    background-color: white;
+    border: 1px solid red;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.card img{
+    width:50vh;
+    height:"auto"
+}
+
+
 @media (max-width: 999px) {
     body{
         overflow: hidden;
