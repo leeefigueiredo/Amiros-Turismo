@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,40 +14,104 @@
     <link rel="stylesheet" href="/Amiros-Turismo-main/bs-travelic/Recursos/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
 
 
 </head>
+
 <body>
 
     <header>
         <nav>
-            
+
             <div class="logo">
-                <img src="/Amiros-Turismo-main/bs-travelic/Recursos/img/logo.jpeg" alt="logo" width="70px" height="50px">
+                <img src="/Amiros-Turismo-main/bs-travelic/Recursos/img/logo.jpeg" alt="logo" width="70px"
+                    height="50px">
                 <p>Amiros turismo</p>
             </div>
 
-           <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-           </div>
-            
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
             <ul class="nav-list">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Pacotes</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Contato</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
-            
-                
+
+
         </nav>
-        
+
+        <div class="icon">
+            <div>
+                <img src="./Recursos/img/pacote.png" alt="pacote" width="80" height="80">
+                <p>Pacotes</p>
+            </div>
+
+            <div>
+                <img src="./Recursos/img/avião.png" alt="pacote" width="80" height="80">
+                <p>Passagens</p>
+            </div>
+            <div>
+                <img src="./Recursos/img/mala.png" alt="pacote" width="80" height="80">
+                <p>Viagens</p>
+            </div>
+
+            <div>
+                <img src="./Recursos/img/cruzeiro.png" alt="pacote" width="80" height="80">
+                <p>Cruzeiros</p>
+            </div>
+
+            <div>
+                <img src="./Recursos/img/casa.png" alt="pacote" width="80" height="80">
+                <p>Pousadas</p>
+            </div>
+
+            <!-- <div>
+                <img src="./Recursos/img/familia.png" alt="pacote" width="80" height="80">
+                <p>Família</p>
+            </div> -->
+
+            <div>
+                <img src="./Recursos/img/mundo.png" alt="pacote" width="80" height="80">
+                <p>internacionais</p>
+            </div>
+        </div>
+
+        <div class="destinos">
+            <h1>Escolha um destino</h1>
+
+            <label for="passeios"></label><br><br>
+            <select id="passeios" onchange="redirecionarPagina()">
+                <option value="">-- Selecione --</option>
+                <option value="litoral">Litoral</option>
+                <option value="colosseum">Coliseu - Roma, Itália</option>
+                <option value="great_wall_of_china">Muralha da China - China</option>
+                <option value="machu_picchu">Machu Picchu - Peru</option>
+                <option value="taj_mahal">Taj Mahal - Índia</option>
+                <option value="pyramids_of_giza">Pirâmides de Gizé - Egito</option>
+            </select>
+
+
+        </div>
 
 
     </header>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="litoral"></div>
     <script src="/Amiros-Turismo-main/bs-travelic/Recursos/js/mobile-navbar.js"></script>
+    <script src="/Amiros-Turismo-main/bs-travelic/Recursos/js/seleção-destino.js"></script>
 </body>
+
 </html>

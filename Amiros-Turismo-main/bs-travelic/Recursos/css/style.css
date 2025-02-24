@@ -7,6 +7,14 @@ body {
     font-style: normal;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+
+}
+
 :root {
     --main-color: #ffcf23
 }
@@ -29,6 +37,7 @@ nav{
     border-radius: 10px;
     
 }
+
 
 
 .logo {
@@ -79,6 +88,32 @@ a {
     color: black;
 }
 
+
+.icon{
+    margin: 2% 0 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.destinos{
+    background: #aaa;
+    border-radius: 5px;
+    border: 2px solid gray;
+    
+}
+
+.destinos h1{
+    font-size: 25px;
+}
+
+#litoral{
+    background-color: red;
+    width: 100%;
+    height: 10vh;
+}
+
 @media (max-width: 999px) {
     body{
         overflow: hidden;
@@ -89,13 +124,14 @@ a {
         position: absolute;
         top: 134px;
         right: 10%;
-        height: 50vh;
+        height: 30vh;
+        width: 25vh;
         flex-direction: column;
         align-items: end;
         background-color: var(--main-color);
         justify-content: space-around;
         border-radius: 5px;
-        transform: translateX(130%);
+        transform: translateX(140%);
         transition: transform 0.3s ease-in;
         margin: 0;
         padding: 10px;
@@ -124,5 +160,24 @@ a {
         }
     }
 
+    .icon{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0;
+        padding: auto;
+        align-items: center;
+
+    }
+
+    .icon p{
+        font-size: 10px;
+    }
+
+    .icon div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
 
 }
