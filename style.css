@@ -1,19 +1,18 @@
-﻿
-body {
-    margin: 24px 10% auto 10%;
+﻿body {
+    margin-top: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: #eee;
     font-family: "Armata", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-header{
-
-}
+header {}
 
 :root {
     --main-color: #ffcf23
@@ -27,15 +26,15 @@ header{
 }
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--main-color);
-   height: 80px;
+    height: 80px;
     padding: 10px;
     border-radius: 10px;
-    
+
 }
 
 
@@ -73,12 +72,12 @@ nav{
 }
 
 .nav-list {
-   list-style: none;
-   display: flex;
+    list-style: none;
+    display: flex;
 
 }
 
-.nav-list li{
+.nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
@@ -89,7 +88,7 @@ a {
 }
 
 
-.icon{
+.icon {
     margin: 2% 0 2% 0;
     display: flex;
     justify-content: space-between;
@@ -97,10 +96,18 @@ a {
     padding: 10px;
 }
 
-.destinos{
-    background: #aaa;
+.icon div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.destinos {
+    background: var(--main-color);
+    padding-top: 10px;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -110,50 +117,75 @@ a {
     height: 100px;
 }
 
-.destinos h1{
-    font-size: 20px;
+.destinos h1 {
+    font-size: 15px;
     padding: 0;
     margin: 0;
     font-family: "Armata", serif;
 }
 
-#passeios{
+#passeios {
     width: 100%;
     font-family: "Armata", serif;
     padding: 10px;
 }
 
+.ofertas {
+    border: 1px solid red;
+    margin-top: 50px;
+    width: auto;
+}
 
-
-.ofertascard{
+.ofertascard {
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
+    justify-content: space-around;
+    padding: 0;
+    font-size: 15px;
+    border-radius: 10px;
+    width: auto;
+    height: auto
+}
 
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: auto;
 }
 
 
-.card{
-    
+.card {
     background-color: white;
-    border: 1px solid red;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: auto;
+    height: 350px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.card img{
-    width:50vh;
-    height:"auto"
+.card img {
+    width: 400px;
+    border-radius: 10px;
 }
+
 
 
 @media (max-width: 999px) {
-    body{
+    body {
         overflow: hidden;
     }
-    
 
-    .nav-list{
+
+
+
+    .nav-list {
         position: absolute;
         top: 134px;
         right: 10%;
@@ -170,30 +202,32 @@ a {
         padding: 10px;
     }
 
-    .nav-list li{
+    .nav-list li {
         margin-left: 0;
-        opacity: 0 ;
-    }
-    .mobile-menu{
-        display:  block;
+        opacity: 0;
     }
 
-    .nav-list.active{
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
         transform: translateX(0);
     }
 
     @keyframes navLinkFade {
-        from{
+        from {
             opacity: 0;
             transform: translateX(50px);
         }
-        to{
+
+        to {
             opacity: 1;
             transform: translateX(0);
         }
     }
 
-    .icon{
+    .icon {
         display: grid;
         grid-template-columns: auto auto auto;
         margin: 0;
@@ -202,15 +236,38 @@ a {
 
     }
 
-    .icon p{
+    .icon img {
+        width: 20px;
+        height: auto;
+    }
+
+    .icon p {
         font-size: 10px;
     }
 
-    .icon div{
+    .icon div {
         display: flex;
         flex-direction: column;
         align-items: center;
-       
+
+    }
+
+
+    .ofertascard {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .ofertas img{
+        width: 100%;
     }
 
 }
