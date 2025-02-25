@@ -201,10 +201,12 @@ main {
         background-color: var(--main-color);
         justify-content: space-around;
         border-radius: 5px;
-        transform: translateX(140%);
+        /* transform: translateX(140%); */
+        display: none;
         transition: transform 0.3s ease-in;
         margin: 0;
         padding: 10px;
+        
     }
 
     .nav-list li {
@@ -217,7 +219,8 @@ main {
     }
 
     .nav-list.active {
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        display: block;
     }
 
     @keyframes navLinkFade {
