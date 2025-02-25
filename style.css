@@ -131,9 +131,13 @@ a {
 }
 
 .ofertas {
-    border: 1px solid red;
+   
     margin-top: 50px;
     width: auto;
+}
+
+.ofertas h1{
+    font-size: 25px;
 }
 
 .ofertascard {
@@ -179,7 +183,8 @@ main {
 
 @media (max-width: 999px) {
     body {
-        overflow: hidden;
+        /* overflow: hidden; */
+        overflow-x: hidden;
     }
 
 
