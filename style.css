@@ -6,6 +6,8 @@
     font-family: "Armata", serif;
     font-weight: 400;
     font-style: normal;
+    
+
 }
 
 html {
@@ -130,10 +132,9 @@ a {
     padding: 10px;
 }
 
-.ofertas {
-   
-    margin-top: 50px;
-    width: auto;
+
+.ofertas img{
+    border-radius: 10px ;
 }
 
 .ofertas h1{
@@ -185,15 +186,19 @@ main {
     body {
         /* overflow: hidden; */
         overflow-x: hidden;
+        background-image: url(./Recursos/img/capamobil.png);
+        background-repeat: no-repeat;
+        background-size:auto
     }
 
+    
 
 
 
     .nav-list {
         position: absolute;
-        top: 134px;
-        right: 10%;
+        top: 100px;
+        right: 0;
         height: 30vh;
         width: 25vh;
         flex-direction: column;
@@ -203,6 +208,7 @@ main {
         border-radius: 5px;
         /* transform: translateX(140%); */
         display: none;
+        justify-content: space-around;
         transition: transform 0.3s ease-in;
         margin: 0;
         padding: 10px;
@@ -210,6 +216,7 @@ main {
     }
 
     .nav-list li {
+        padding: 20px;
         margin-left: 0;
         opacity: 0;
     }
@@ -235,9 +242,17 @@ main {
         }
     }
 
+    nav{
+        border-radius: 10px 10px 0 0;
+        margin: -30px;
+    }
+
     .icon {
-        display: grid;
-        grid-template-columns: auto auto auto;
+        /* display: grid;
+        grid-template-columns: auto auto auto; */
+        padding-top: 40vh;
+        display: flex;
+        flex-direction: row;
         margin: 0;
         padding: auto;
         align-items: center;
@@ -254,6 +269,9 @@ main {
     }
 
     .icon div {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -274,8 +292,9 @@ main {
         padding: 10px;
     }
 
-    .ofertas img{
-        width: 100%;
-    }
+   
+
+ 
+    
 
 }
