@@ -311,7 +311,88 @@ main {
         padding: 10px;
     }
 
+    
 
+    .destinospop01{
+        display: flex;
+        flex-direction: row;
+       
+        justify-content: space-between;
+        justify-items: center;
+    }
 
+    .destinospop {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
 
-}
+    .destinospop01 p {
+        font-size: 10px;
+
+    }
+
+    .destinospop01 img{
+        border-radius: 10px;
+        border: 4px solid white;
+    }
+
+    .reserve{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color: var(--main-color);
+        padding: 0;
+        border-radius: 10px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    
+    
+    .reserve div{
+        background-color: white;
+       padding: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+        
+    }
+
+    #res{
+        padding: 0;
+        margin: 0;
+    }
+
+    .reserve p{
+        padding: 0;
+    }
+
+    .reserve div p {
+        padding: 50px;
+    }
+
+    .parceiros{
+        background-color: white;
+        
+        align-items: center;
+        text-align: center;
+       
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .parceiros div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .parceiros img{
+        border-radius: 10px;
+    }
+
+    }
+
